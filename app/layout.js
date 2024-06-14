@@ -1,7 +1,11 @@
-import { Inter } from "next/font/google";
+import { Roboto_Serif, Work_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "./Component/Header/page";
+import Footer from "./Component/Footer/page";
+import Cards from "./Component/Cards/Cards";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto_Serif({ subsets: ["latin"] });
+const work = Work_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +15,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* <Header /> */}
+
+        {children}
+        {/* <Footer /> */}
+        {/* <Cards /> */}
+      </body>
     </html>
   );
 }

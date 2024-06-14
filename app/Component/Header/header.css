@@ -1,0 +1,45 @@
+.top-header {
+  max-width: 100%;
+  display: grid;
+  justify-items: center;
+}
+.sub-header {
+  display: grid;
+  /* justify-content: center; */
+  width: 90%;
+  /* border-bottom: #cbecfd; */
+}
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px 24px 0px;
+}
+.header-pages {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+}
+.header-pages p {
+  color: #777777;
+}
+.header-pages p:nth-child(1) {
+  color: #00a9ff;
+}
+.header-button button {
+  width: 134px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 24px, 12px, 24px;
+  gap: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #00a9ff;
+}
+.sub-header .header-line {
+  height: 2px;
+  background-color: #cbecfd;
+}
