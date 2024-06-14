@@ -387,6 +387,14 @@ input {
   display: grid;
   row-gap: 10px;
 }
+.color {
+  background-color: #e9f6fd;
+  display: none;
+}
+.man-grid-image img {
+  width: 360px;
+  height: 400px;
+}
 /* @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main-banner {
     max-width: 100%;
@@ -423,7 +431,19 @@ input {
   .over {
     width: 100%;
   }
-
+  .banner-card {
+    height: 100vh;
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* display: grid; */
+    /* grid-auto-flow: row; */
+    max-width: 100%;
+    background-image: url(../public/Images/banner.svg);
+    background-size: cover;
+    background-position-x: right;
+    position: relative;
+    overflow: hidden;
+  }
   .page-shakti {
     display: grid;
   }
@@ -487,6 +507,11 @@ input {
     justify-self: center;
     padding: 20px 0;
   }
+
+  .page-four {
+    display: grid;
+    justify-content: center;
+  }
   .top-get-started-para {
     justify-items: center;
     text-align: center;
@@ -494,5 +519,279 @@ input {
   .get-started {
     justify-self: center;
     padding: 20px 0;
+  }
+  .color {
+    background-color: #e9f6fd;
+    display: block;
+  }
+  .banner-card .left-grid {
+    display: none;
+  }
+  /* .left-container-banner {
+    max-width: 100%;
+  } */
+
+  .left-line {
+    border-bottom: 1px solid #00a9ff;
+
+    border-top: 1px solid #00a9ff;
+    max-width: fit-content;
+  }
+  .left-grid {
+    max-width: 100%;
+    display: grid;
+    row-gap: 50px;
+    justify-items: center;
+    text-align: center;
+    padding: 50px 0 0 0;
+  }
+  .dot {
+    color: #00a9ff;
+  }
+  .left-container-roboto {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 64.94px;
+    max-width: 35rem;
+    font-family: "san";
+  }
+  .left-grid-get {
+    display: grid;
+    grid-template-columns: 0.9fr 13fr;
+    align-items: center;
+  }
+  .left-grid-get p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00a9ff;
+  }
+  .left-grid-para {
+    max-width: 30rem;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: auto;
+    display: grid;
+    row-gap: 5px;
+  }
+  .left-grid-get img {
+    /* position: relative; */
+    width: 55px;
+    height: 40px;
+    border: 2px;
+  }
+
+  .page-two-right-grid-para p:nth-child(2) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 40rem;
+    line-height: 1.2rem;
+    justify-self: center;
+  }
+  .page-two-right-grid-para p:nth-child(3) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 40rem;
+    line-height: 1.2rem;
+    justify-self: center;
+  }
+  .page-two-right-grid-para p:nth-child(4) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 40rem;
+    line-height: 1.2rem;
+    justify-self: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 650px) {
+  .over {
+    width: 100%;
+    display: grid;
+  }
+  .main-banner {
+    max-width: 100%;
+  }
+  .banner-card {
+    height: 346px;
+    height: 75vh;
+    width: 100%;
+
+    /* display: grid; */
+    /* grid-auto-flow: row; */
+    max-width: 100%;
+    background-image: url(../public//Images//fetch.svg);
+    background-size: cover;
+    background-position-x: right;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-shakti {
+    display: grid;
+  }
+
+  .page-too-find {
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+  }
+  .page-three {
+    display: grid;
+  }
+  .border {
+    display: none;
+  }
+  .page-three .flex {
+    display: grid;
+    grid-auto-flow: row;
+  }
+  .page-four {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    /* grid-template-columns: 50% 50%; */
+    padding: 20px;
+  }
+  .get-started-para h1 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .overall-form {
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    grid-auto-flow: row;
+    justify-content: space-between;
+    grid-column-gap: 5px;
+    column-gap: 5px;
+    grid-row-gap: 7px;
+    row-gap: 7px;
+  }
+  .input-form {
+    max-width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5px;
+  }
+  .right-top {
+    display: grid;
+    justify-self: center;
+  }
+  .page-two-right-grid {
+    padding: 5px;
+  }
+  .accordion-column {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+  }
+  .man-grid {
+    display: grid;
+    justify-self: center;
+    padding: 10px 0;
+  }
+
+  .page-four {
+    display: grid;
+    justify-content: center;
+  }
+  .top-get-started-para {
+    justify-items: center;
+    text-align: center;
+  }
+  .get-started {
+    justify-self: center;
+    padding: 10px 0;
+  }
+  .color {
+    background-color: #e9f6fd;
+    display: block;
+    width: 100%;
+  }
+  .banner-card .left-grid {
+    display: none;
+  }
+  /* .left-container-banner {
+    max-width: 100%;
+  } */
+
+  .left-line {
+    border-bottom: 1px solid #00a9ff;
+
+    border-top: 1px solid #00a9ff;
+    max-width: fit-content;
+  }
+  .left-grid {
+    max-width: 100%;
+    display: grid;
+    row-gap: 25px;
+    justify-items: center;
+    text-align: center;
+    padding: 25px 0 0 0;
+  }
+  .dot {
+    color: #00a9ff;
+  }
+  .left-container-roboto {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 44.94px;
+    max-width: 30rem;
+    font-family: "san";
+  }
+  .left-grid-get {
+    display: grid;
+    grid-template-columns: 0.9fr 13fr;
+    align-items: center;
+  }
+  .left-grid-get p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #00a9ff;
+  }
+  .left-grid-para {
+    max-width: 25rem;
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: auto;
+    display: grid;
+    row-gap: 5px;
+  }
+  .left-grid-get img {
+    /* position: relative; */
+    width: 55px;
+    height: 40px;
+    border: 2px;
+  }
+
+  .page-two-right-grid-para p:nth-child(2) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 35rem;
+    line-height: 1.2rem;
+    justify-self: center;
+  }
+  .page-two-right-grid-para p:nth-child(3) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 35rem;
+    line-height: 1.2rem;
+    justify-self: center;
+  }
+  .page-two-right-grid-para p:nth-child(4) {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 40rem;
+    line-height: 1.2rem;
+    justify-self: center;
   }
 }

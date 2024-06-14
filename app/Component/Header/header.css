@@ -2,7 +2,11 @@
   max-width: 100%;
   display: grid;
   justify-items: center;
+  /* background-color: #e9f6fd; */
 }
+/* .sub-header {
+  background-color: #e9f6fd;
+} */
 .sub-header {
   display: grid;
   /* justify-content: center; */
@@ -42,4 +46,25 @@
 .sub-header .header-line {
   height: 2px;
   background-color: #cbecfd;
+}
+@media (min-width: 650px) and (max-width: 1024px) {
+  .header-pages {
+    display: none;
+  }
+  .header-image img {
+    width: 140px;
+    height: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 650px) {
+  .sub-header {
+    background-color: #e9f6fd;
+  }
+  .header-pages {
+    display: none;
+  }
+  .header-image img {
+    width: 100px;
+    height: 20px;
+  }
 }

@@ -112,6 +112,6 @@ a {
   padding: 0;
   box-sizing: border-box;
 }
-/* html {
-  display: grid;
-} */
+html {
+  max-width: 100%;
+}

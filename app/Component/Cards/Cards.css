@@ -112,7 +112,8 @@ p {
   font-size: 14px;
   line-height: 1.5;
 } */
-@keyframes rotate {
+
+/* @keyframes third {
   from {
     transform: rotate(0deg);
   }
@@ -120,14 +121,23 @@ p {
     transform: rotate(-20deg);
   }
 }
-/* @keyframes rotate {
+
+@keyframes second {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
   from {
     transform: rotate(20deg);
   }
   to {
     transform: rotate(0deg);
   }
-} */
+}
 
 .container {
   display: flex;
@@ -137,6 +147,7 @@ p {
   background: url("/front-page/public/Images/profit.svg") no-repeat center
     center fixed;
   background-size: cover;
+  position: relative;
 }
 
 .card {
@@ -148,9 +159,139 @@ p {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: rotate 3s linear infinite;
+  animation: rotate 5s linear infinite;
+  position: absolute;
+}
+.card-one {
+  width: 200px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: second 5s linear infinite;
+  position: absolute;
+}
+.card-two {
+  width: 200px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: third 5s linear infinite;
+  position: absolute;
 }
 
 .cardContent {
   text-align: center;
+} */
+@keyframes second {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes third {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: url("/front-page/public/Images/profit.svg") no-repeat center
+    center fixed; */
+  background-size: cover;
+  animation-delay: 3s;
+}
+
+.card {
+  position: absolute;
+  width: 446px;
+  height: 443px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  animation: third 7s linear infinite;
+  z-index: 2;
+}
+
+.card-two {
+  position: absolute;
+  width: 446px;
+  height: 443px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  animation: rotate 7s linear infinite;
+  /* animation-delay: 0s; */
+  z-index: 1;
+}
+
+.card-one {
+  position: absolute;
+  width: 446px;
+  height: 443px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  animation: second 7s linear infinite;
+  /* animation-delay: 1.66s; */
+  z-index: 1;
+}
+
+.card-one {
+  /* animation-delay: 3.33s; */
+  z-index: 1;
+}
+
+.cardContent {
+  text-align: center;
+}
+.card img {
+  width: 446px;
+
+  height: 443px;
+}
+.card-one img {
+  width: 446px;
+
+  height: 443px;
+}
+.card-two img {
+  width: 446px;
+
+  height: 443px;
 }
