@@ -3,8 +3,8 @@ import "./globals.css";
 
 import Footer from "./Component/Footer/page";
 
-const inter = Roboto_Serif({ subsets: ["latin"] });
-const work = Work_Sans({ subsets: ["latin"] });
+const inter = Roboto_Serif({ subsets: ["latin"], variable: "--font-roboto" });
+const work = Work_Sans({ subsets: ["latin"], variable: "--font-work" });
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${work.variable}`}>
         {children}
         <Footer />
       </body>{" "}

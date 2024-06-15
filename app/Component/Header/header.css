@@ -21,6 +21,7 @@
   display: grid;
   grid-auto-flow: column;
   column-gap: 20px;
+  font-family: var(--font-work);
 }
 .header-pages p {
   color: #777777;
@@ -53,6 +54,17 @@
     width: 140px;
     height: 30px;
   }
+  .header-button button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 20px, 8px, 20px;
+    gap: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #00a9ff;
+  }
 }
 
 /* Mobile View  */
@@ -61,7 +73,26 @@
     display: none;
   }
   .header-image img {
-    width: 100px;
-    height: 20px;
+    /* width: 100px;
+    height: 20px; */
+  }
+  .header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px 24px 0px;
+  }
+  .header-button button {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 20px, 15px, 20px;
+    gap: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    background: #00a9ff;
   }
 }

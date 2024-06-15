@@ -7,7 +7,7 @@ export default function page() {
     <div className="footer-parent">
       <div className="footer">
         <div>
-          <img src="/Images/footerlogo.svg" />
+          <img src="/Images/logo.svg" />
         </div>
         <div className="code"></div>
         <div className="footer-center">
