@@ -2,16 +2,12 @@
   max-width: 100%;
   display: grid;
   justify-items: center;
-  /* background-color: #e9f6fd; */
 }
-/* .sub-header {
-  background-color: #e9f6fd;
-} */
+
 .sub-header {
   display: grid;
-  /* justify-content: center; */
+
   width: 90%;
-  /* border-bottom: #cbecfd; */
 }
 
 .header {

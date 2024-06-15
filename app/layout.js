@@ -1,11 +1,7 @@
 import { Roboto_Serif, Work_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "./Component/Header/page";
+
 import Footer from "./Component/Footer/page";
-import Cards from "./Component/Cards/Cards";
-import Form from "./Component/Form/page";
-// import Terms from "./Component/Terms/Terms";
-// import Privacy from "./Component/Privacy/Privacy";
 
 const inter = Roboto_Serif({ subsets: ["latin"] });
 const work = Work_Sans({ subsets: ["latin"] });
@@ -21,8 +17,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <Footer />
-        {/* <Form /> */}
-        {/* <Privacy /> */}
       </body>{" "}
     </html>
   );
