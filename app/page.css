@@ -224,19 +224,19 @@
 .flex-one:hover {
   background: #00a9ff;
 }
-.flex-one p:hover {
+.flex-one:hover p {
   color: white;
 }
-.flex-one img:hover {
+.flex-one:hover img {
   filter: brightness(0) invert(1);
 }
 .flex-two:hover {
   background-color: #00a9ff;
 }
-.flex-two p:hover {
+.flex-two:hover p {
   color: white;
 }
-.flex-two img:hover {
+.flex-two:hover img {
   filter: brightness(0) invert(1);
 }
 .page-four {

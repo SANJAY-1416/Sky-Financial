@@ -2,7 +2,7 @@ import "./page.css";
 import Link from "next/link";
 import Accordion from "./Component/Accordian/Accordian";
 import Header from "./Component/Header/page";
-import Cards from "./Component/Cards/Cards";
+// import Cards from "./Component/Cards/Cards";
 
 export default function page() {
   return (
@@ -91,8 +91,8 @@ export default function page() {
           <div className="page-too-find">
             {/* Animated images */}
             <div className="animation">
-              {/* <img src="/Images/Aboutus.svg" /> */}
-              <Cards />
+              <img src="/Images/Aboutus.svg" />
+              {/* <Cards /> */}
             </div>
 
             {/* Animated insurance partner  */}

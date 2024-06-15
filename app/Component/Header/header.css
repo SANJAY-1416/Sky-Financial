@@ -61,9 +61,6 @@
 
 /* Mobile View  */
 @media (min-width: 320px) and (max-width: 650px) {
-  .sub-header {
-    /* background-color: #e9f6fd; */
-  }
   .header-pages {
     display: none;
   }
