@@ -47,6 +47,8 @@
   height: 2px;
   background-color: #cbecfd;
 }
+/* Tab View  */
+
 @media (min-width: 650px) and (max-width: 1024px) {
   .header-pages {
     display: none;
@@ -56,9 +58,11 @@
     height: 30px;
   }
 }
+
+/* Mobile View  */
 @media (min-width: 320px) and (max-width: 650px) {
   .sub-header {
-    background-color: #e9f6fd;
+    /* background-color: #e9f6fd; */
   }
   .header-pages {
     display: none;

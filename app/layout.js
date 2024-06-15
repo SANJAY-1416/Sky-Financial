@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "./Component/Header/page";
 import Footer from "./Component/Footer/page";
 import Cards from "./Component/Cards/Cards";
+// import Terms from "./Component/Terms/Terms";
+// import Privacy from "./Component/Privacy/Privacy";
 
 const inter = Roboto_Serif({ subsets: ["latin"] });
 const work = Work_Sans({ subsets: ["latin"] });
@@ -16,13 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Header /> */}
-
         {children}
-
         <Footer />
-        <Cards />
-      </body>
+        {/* <Privacy /> */}
+      </body>{" "}
     </html>
   );
 }

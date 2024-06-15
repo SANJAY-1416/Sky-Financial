@@ -1,9 +1,10 @@
 import React from "react";
 import "./Footer.css";
+import Link from "next/link";
 
 export default function page() {
   return (
-    <div>
+    <div className="footer-parent">
       <div className="footer">
         <div>
           <img src="/Images/footerlogo.svg" />
@@ -42,8 +43,8 @@ export default function page() {
           <p>© 2024 SKY FINANCIAL, New York, NY. All Rights Reserved.</p>
         </div>
         <div className="sub-footer-terms">
-          <p>Terms of use</p>
-          <p>Privacy & Other policies</p>
+          <Link href="/Component/Terms">Terms of use</Link>
+          <Link href="/Component/Privacy">Privacy & Other policies</Link>
         </div>
       </div>
     </div>

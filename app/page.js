@@ -1,61 +1,20 @@
-// "use client";
-import Image from "next/image";
 import "./page.css";
-// import Header from "./Component/Header/page";
+import Link from "next/link";
 import Accordion from "./Component/Accordian/Accordian";
 import Header from "./Component/Header/page";
 import Cards from "./Component/Cards/Cards";
-import Footer from "./Component/Footer/page";
-// import Cards from "./Component/Cards/Cards";
-// import Card from "./Component/Cards/Cards";
-// import { useState } from "react";
-// import utils from "./utils/mail.utils";
 
-export default function Home() {
-  // const [formData, setFormData] = useState({
-  //   name: "sanjay",
-  //   subject: "Hi",
-  //   email: "mr.sanjay.official@gmail.com",
-  //   phone: "7305106523",
-  //   message: "Hii I am sanjay",
-  // });
-  // const handleChange = (e) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     const res = await fetch("/api/sendEmail", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-  //     if (!res.ok) {
-  //       const error = await res.json();
-  //       alert(`Error: ${error.error}`);
-  //     } else {
-  //       const result = await res.json();
-  //       alert(result.message);
-  //     }
-  //   } catch (error) {
-  //     console.error("Error:", error);
-  //     alert("An unexpected error occurred.");
-  //   }
-
+export default function page() {
   return (
     <>
-      <div className="over">
-        {/* page one */}
+      {/* Over all component pages */}
+      <div className="over-all-component-pages">
+        {/* First Component */}
         <div className="main-banner">
           <div className="banner-card">
             <Header />
-            {/* <img src="/Images/banner.svg" /> */}
 
+            {/* Family banner  */}
             <div className="left-grid">
               <div className="left-content-banner">
                 <div className="left-line">
@@ -89,6 +48,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Family banner for Mobile view and Tab view */}
           <div className="color">
             <div className="left-grid">
               <div className="left-content-banner">
@@ -125,13 +86,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* page two  */}
-
-        <div className="page-shakti">
+        {/* Second Component */}
+        <div className="page-top">
           <div className="page-too-find">
+            {/* Animated images */}
             <div className="animation">
-              <img src="/Images/Aboutus.svg" />
+              {/* <img src="/Images/Aboutus.svg" /> */}
+              <Cards />
             </div>
+
+            {/* Animated insurance partner  */}
             <div className="page-two-right-grid">
               <div className="right-top">
                 <div className="left-line">
@@ -244,85 +208,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* page three */}
-        {/* <div className="page-three">
-          <div className="border"></div>
-          <div className="flex">
-            <div className="flex-one">
-              <img src="/Images/time.svg" />
-              <p>ANNUTIES</p>
-              <p>Secure Your Retirement</p>
-              <p>
-                Planning for retirement is a crucial step in achieving long-term
-                financial security. Annuities offer a reliable way to generate
-                guaranteed income for life, ensuring that you can enjoy your
-                retirement years with confidence.
-              </p>
-              <p>
-                At Sky Financial, we specialize in annuity products tailored to
-                the needs of high net worth individuals. Our exclusive offerings
-                provide competitive returns and tax advantages, allowing you to
-                maximize your retirement savings and enjoy a worry-free future.
-              </p>
-              <p>
-                Whether you're looking for immediate income or a deferred
-                annuity to supplement your retirement savings, our team of
-                experts will help you navigate the options and find the right
-                solution for your needs.
-              </p>
-            </div>
-            <div className="flex-two">
-              <img src="/Images/handhold.svg" />
-              <p>ANNUTIES</p>
-              <p>Secure Your Retirement</p>
-              <p>
-                Planning for retirement is a crucial step in achieving long-term
-                financial security. Annuities offer a reliable way to generate
-                guaranteed income for life, ensuring that you can enjoy your
-                retirement years with confidence.
-              </p>
-              <p>
-                At Sky Financial, we specialize in annuity products tailored to
-                the needs of high net worth individuals. Our exclusive offerings
-                provide competitive returns and tax advantages, allowing you to
-                maximize your retirement savings and enjoy a worry-free future.
-              </p>
-              <p>
-                Whether you're looking for immediate income or a deferred
-                annuity to supplement your retirement savings, our team of
-                experts will help you navigate the options and find the right
-                solution for your needs.
-              </p>
-            </div>
-            <div className="flex-one">
-              <img src="/Images/profit.svg" />
-              <p>ANNUTIES</p>
-              <p>Secure Your Retirement</p>
-              <p>
-                Planning for retirement is a crucial step in achieving long-term
-                financial security. Annuities offer a reliable way to generate
-                guaranteed income for life, ensuring that you can enjoy your
-                retirement years with confidence.
-              </p>
-              <p>
-                At Sky Financial, we specialize in annuity products tailored to
-                the needs of high net worth individuals. Our exclusive offerings
-                provide competitive returns and tax advantages, allowing you to
-                maximize your retirement savings and enjoy a worry-free future.
-              </p>
-              <p>
-                Whether you're looking for immediate income or a deferred
-                annuity to supplement your retirement savings, our team of
-                experts will help you navigate the options and find the right
-                solution for your needs.
-              </p>
-            </div>
-          </div>
-        </div> */}
-
-        {/* page four  */}
-
+        {/* Third Component  */}
         <div className="page-four">
+          {/* Register page  */}
+
           <div className="top-get-started">
             <div className="get-started">
               <div className="left-line">
@@ -342,70 +231,53 @@ export default function Home() {
               </p>
             </div>
           </div>
-
+          {/* Register form  */}
           <div className="form">
             <div className="sub-form">
               <div className="overall-form">
-                <div className="input-form">
-                  <div>
-                    <img src="./Images/user.svg" />
+                <div className="input-gap">
+                  <div className="input-form">
+                    <div>
+                      <img src="./Images/user.svg" />
+                    </div>
+                    <div className="line"></div>
+                    <div>
+                      <input placeholder="name" />
+                    </div>
                   </div>
-                  <div className="line"></div>
-                  <div>
-                    <input
-                      placeholder="name"
-                      // value={formData.name}
-                      // onChange={handleChange}
-                    />
-                  </div>
-                </div>
-                <div className="input-form">
-                  <div>
-                    <img src="./Images/user.svg" />
-                  </div>
-                  <div className="line"></div>
-                  <div>
-                    <input
-                      placeholder="Subject"
-                      // value={formData.subject}
-                      // onChange={handleChange}
-                    />
+                  <div className="input-form">
+                    <div>
+                      <img src="./Images/user.svg" />
+                    </div>
+                    <div className="line"></div>
+                    <div>
+                      <input placeholder="Subject" />
+                    </div>
                   </div>
                 </div>
-                <div className="input-form">
-                  <div>
-                    <img src="./Images/mail.svg" />
+                <div className="input-gap">
+                  <div className="input-form">
+                    <div>
+                      <img src="./Images/mail.svg" />
+                    </div>
+                    <div className="line"></div>
+                    <div>
+                      <input placeholder="E-mail" />
+                    </div>
                   </div>
-                  <div className="line"></div>
-                  <div>
-                    <input
-                      placeholder="E-mail"
-                      // value={formData.email}
-                      // onChange={handleChange}
-                    />
-                  </div>
-                </div>
-                <div className="input-form">
-                  <div>
-                    <img src="./Images/phone.svg" />
-                  </div>
-                  <div className="line"></div>
-                  <div>
-                    <input
-                      placeholder="Phone"
-                      // value={formData.phone}
-                      // onChange={handleChange}
-                    />
+                  <div className="input-form">
+                    <div>
+                      <img src="./Images/phone.svg" />
+                    </div>
+                    <div className="line"></div>
+                    <div>
+                      <input placeholder="Phone" />
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="input-form-message">
-                <input
-                  placeholder="Message"
-                  height="80px"
-                  // value={formData.message}
-                  // onChange={handleChange}
-                />
+                <input placeholder="Message" height="80px" />
               </div>
               <div className="form-touch">
                 <button type="submit">Get in touch</button>
@@ -413,9 +285,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* page five */}
 
+        {/* Fourth Component */}
         <div className="accordion-column">
+          {/* //Accordians  */}
+          <div className="man">
+            <img src="/Images/man.svg" width="360px" height="400px" />
+          </div>
           <div className="accordian-title-content">
             <Accordion
               title="How much life insurance do I actually need?"
@@ -548,6 +424,8 @@ export default function Home() {
               }
             />
           </div>
+
+          {/* Man Grid */}
           <div className="man-grid">
             <div className="left-line">
               <p>FREQUENTLY ASKED QUESTIONS</p>
@@ -569,10 +447,57 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <Cards /> */}
 
-        <div>{/* <Footer /> */}</div>
+        {/* <div>
+          <div className="footer-parent">
+            <div className="footer">
+              <div>
+                <img src="/Images/footerlogo.svg" />
+              </div>
+              <div className="code"></div>
+              <div className="footer-center">
+                <p>
+                  Welcome to <span className="dot">SKY FINANCIAL</span>, where
+                  we prioritize protecting your future above all else. Our About
+                  Us section offers a glimpse into who we are, our values, and
+                  why we're dedicated to ensuring your peace of mind. Meet our
+                  experienced team, learn about our history, and discover how
+                  our personalized approach to life insurance can safeguard your
+                  loved ones' financial security. At [Agency Name], we're here
+                  to guide you toward a future of confidence and security.
+                </p>
+              </div>
+              <div className="code"></div>
+              <div className="image-row ">
+                <div className="image-number">
+                  <img src="/Images/call.svg" />
+                  <p>586-907-8700</p>
+                </div>
+                <div className="image-number">
+                  <img src="/Images/gmail.svg" />
+                  <p>sam@sky.financial</p>
+                </div>
+                <div className="image-number">
+                  <img src="/Images/map-pin.svg" />
+                  <p>455 E Maple Rd Troy, Michigan 48083, USA.</p>
+                </div>
+              </div>
+            </div>
+            <div className="sub-footer">
+              <div className="sub-footer-rights">
+                <p>© 2024 SKY FINANCIAL, New York, NY. All Rights Reserved.</p>
+              </div>
+              <div className="sub-footer-terms">
+                <Link href="/Component/Terms">
+                  <p>Terms of use</p>
+                </Link>
+                <Link href="/Component/Privacy">Privacy & Other policies</Link>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
+      <div>{/* <Footer /> */}</div>
     </>
   );
 }

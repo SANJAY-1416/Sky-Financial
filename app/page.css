@@ -3,14 +3,10 @@
 }
 
 .banner-card {
-  /* width: 100%; */
-  /* width: 100vw; */
-  /* position: fixed; */
   height: 100vh;
-  /* height: 100vh; */
+
   width: 100%;
-  /* display: grid; */
-  /* grid-auto-flow: row; */
+
   background-image: url(../public/Images/banner.svg);
   background-size: cover;
   background-position: center;
@@ -23,7 +19,6 @@
 }
 
 .left-line {
-  /* height: 1px; */
   border-bottom: 1px solid #00a9ff;
 
   border-top: 1px solid #00a9ff;
@@ -32,8 +27,9 @@
 .left-grid {
   max-width: 100%;
   display: grid;
-  row-gap: 100px;
-  padding: 150px 0 0 70px;
+  row-gap: 40px;
+  padding: 120px 0 0 70px;
+  margin-bottom: 10px;
 }
 .dot {
   color: #00a9ff;
@@ -65,37 +61,29 @@
   font-family: auto;
   display: grid;
   row-gap: 10px;
+  max-width: 26rem;
 }
 .left-grid-get img {
-  /* position: relative; */
   width: 55px;
   height: 40px;
   border: 2px;
 }
-/* .do {
-  position: relative;
-} */
-.page-shakti {
+
+.page-top {
   display: grid;
 
-  /* grid-template-columns: 7fr 8fr; */
   padding: 50px 0;
   align-items: center;
 }
 .page-too-find {
   display: grid;
-  /* grid-template-columns: 7fr 8fr; */
+
   grid-auto-flow: column;
   justify-content: space-evenly;
   padding: 50px 0;
   align-items: center;
 }
-/* .harini {
-  display: grid;
-  grid-template-columns: 7fr 8fr;
-  padding: 50px 0;
-  align-items: center;
-} */
+
 .page-two-right-grid {
   display: grid;
   padding: 0 70px 0 0;
@@ -270,12 +258,18 @@
   border: 1px solid grey;
   padding: 10px;
   border-radius: 10px;
+  gap: 5px;
+  /* width: 100%; */
+}
+.input-gap {
+  display: grid;
+  row-gap: 10px;
 }
 .form .input-form-message {
   border: 1px solid grey;
   padding: 10px;
   border-radius: 10px;
-  max-width: 100%;
+  width: 100%;
 }
 .input-form-message {
   height: 80px;
@@ -289,6 +283,8 @@
 input {
   border: none;
   background: none;
+  width: 100%;
+  outline: none;
 }
 .overall-form {
   display: grid;
@@ -336,11 +332,12 @@ input {
 .get-started-para h1 {
   font-size: 40px;
   font-weight: 700;
+  max-width: 38rem;
 }
 .accordion-column {
   display: grid;
   /* grid-template-columns: 4fr 3fr; */
-  max-height: 739px;
+  /* max-height: 739px; */
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
@@ -383,6 +380,9 @@ input {
   line-height: 18px;
   color: #777777;
 }
+.man img {
+  display: none;
+}
 .accordian-title-content {
   display: grid;
   row-gap: 10px;
@@ -395,48 +395,16 @@ input {
   width: 360px;
   height: 400px;
 }
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main-banner {
-    max-width: 100%;
-  }
 
-  .banner-card {
-    min-width: 100%;
-    min-height: 100%;
-    display: grid;
-    grid-auto-flow: row;
-    background-image: url(../public/Images/banner.svg);
-    background-size: cover;
-    background-position: center;
-  }
-  .left-container-roboto h1 {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .main-banner {
-    max-width: 100%;
-    object-fit: cover;
-  }
+/* Tab View  */
 
-  .banner-card {
-    display: grid;
-    grid-auto-flow: row;
-    background-image: url(../public/Images/banner.svg);
-    background-size: cover;
-    background-position: center;
-  }
-} */
 @media (min-width: 650px) and (max-width: 1024px) {
   .over {
     width: 100%;
   }
   .banner-card {
     height: 100vh;
-    /* height: 100vh; */
-    /* width: 100%; */
-    /* display: grid; */
-    /* grid-auto-flow: row; */
+
     max-width: 100%;
     background-image: url(../public/Images/banner.svg);
     background-size: cover;
@@ -444,7 +412,7 @@ input {
     position: relative;
     overflow: hidden;
   }
-  .page-shakti {
+  .page-top {
     display: grid;
   }
 
@@ -467,7 +435,7 @@ input {
     display: grid;
     grid-auto-flow: row;
     justify-content: space-between;
-    /* grid-template-columns: 50% 50%; */
+
     padding: 40px;
   }
   .get-started-para h1 {
@@ -477,7 +445,7 @@ input {
   .overall-form {
     display: grid;
     /* grid-template-columns: auto auto; */
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
     justify-content: space-between;
     grid-column-gap: 10px;
     column-gap: 10px;
@@ -511,6 +479,8 @@ input {
   .page-four {
     display: grid;
     justify-content: center;
+    row-gap: 25px;
+    /* grid-auto-flow: column; */
   }
   .top-get-started-para {
     justify-items: center;
@@ -565,6 +535,7 @@ input {
     font-size: 14px;
     font-weight: 600;
     color: #00a9ff;
+    width: 6rem;
   }
   .left-grid-para {
     max-width: 30rem;
@@ -608,6 +579,9 @@ input {
     justify-self: center;
   }
 }
+
+/* Mobile View  */
+
 @media (min-width: 320px) and (max-width: 650px) {
   .over {
     width: 100%;
@@ -620,9 +594,6 @@ input {
     height: 346px;
     height: 75vh;
     width: 100%;
-
-    /* display: grid; */
-    /* grid-auto-flow: row; */
     max-width: 100%;
     background-image: url(../public//Images//fetch.svg);
     background-size: cover;
@@ -630,7 +601,7 @@ input {
     position: relative;
     overflow: hidden;
   }
-  .page-shakti {
+  .page-top {
     display: grid;
   }
 
@@ -674,7 +645,7 @@ input {
     max-width: 100%;
     display: grid;
     grid-auto-flow: column;
-    column-gap: 5px;
+    column-gap: 10px;
   }
   .right-top {
     display: grid;
@@ -714,10 +685,6 @@ input {
   .banner-card .left-grid {
     display: none;
   }
-  /* .left-container-banner {
-    max-width: 100%;
-  } */
-
   .left-line {
     border-bottom: 1px solid #00a9ff;
 
@@ -728,9 +695,9 @@ input {
     max-width: 100%;
     display: grid;
     row-gap: 25px;
-    justify-items: center;
-    text-align: center;
-    padding: 25px 0 0 0;
+    /* justify-items: center; */
+    /* text-align: center; */
+    padding: 30px 30px;
   }
   .dot {
     color: #00a9ff;
@@ -743,6 +710,12 @@ input {
     max-width: 30rem;
     font-family: "san";
   }
+  .left-container-roboto h1 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 50.47px;
+    max-width: 20rem;
+  }
   .left-grid-get {
     display: grid;
     grid-template-columns: 0.9fr 13fr;
@@ -752,6 +725,7 @@ input {
     font-size: 14px;
     font-weight: 600;
     color: #00a9ff;
+    width: 6rem;
   }
   .left-grid-para {
     max-width: 25rem;
@@ -764,7 +738,6 @@ input {
     row-gap: 5px;
   }
   .left-grid-get img {
-    /* position: relative; */
     width: 55px;
     height: 40px;
     border: 2px;
@@ -794,4 +767,23 @@ input {
     line-height: 1.2rem;
     justify-self: center;
   }
+  html {
+    max-width: 100%;
+    display: grid;
+  }
+  .man {
+    display: grid;
+    justify-self: center;
+  }
+  .man img {
+    display: block;
+    width: 360px;
+    height: 400px;
+  }
+  .man-grid-image img {
+    display: none;
+  }
+}
+.amirtha {
+  display: grid;
 }
