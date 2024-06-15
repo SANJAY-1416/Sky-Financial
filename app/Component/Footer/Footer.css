@@ -76,6 +76,10 @@
     padding: 10px;
     row-gap: 5px;
   }
+  .image-row {
+    display: grid;
+    grid-auto-flow: column;
+  }
   .sub-footer p {
     font-size: 12px;
     /* padding: 0; */
