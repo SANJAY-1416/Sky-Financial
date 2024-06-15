@@ -2,6 +2,7 @@ import "./page.css";
 import Link from "next/link";
 import Accordion from "./Component/Accordian/Accordian";
 import Header from "./Component/Header/page";
+import Form from "./Component/Form/page";
 // import Cards from "./Component/Cards/Cards";
 
 export default function page() {
@@ -232,7 +233,7 @@ export default function page() {
             </div>
           </div>
           {/* Register form  */}
-          <div className="form">
+          {/* <div className="form">
             <div className="sub-form">
               <div className="overall-form">
                 <div className="input-gap">
@@ -283,6 +284,9 @@ export default function page() {
                 <button type="submit">Get in touch</button>
               </div>
             </div>
+          </div> */}
+          <div>
+            <Form />
           </div>
         </div>
 

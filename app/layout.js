@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./Component/Header/page";
 import Footer from "./Component/Footer/page";
 import Cards from "./Component/Cards/Cards";
+import Form from "./Component/Form/page";
 // import Terms from "./Component/Terms/Terms";
 // import Privacy from "./Component/Privacy/Privacy";
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <Footer />
+        {/* <Form /> */}
         {/* <Privacy /> */}
       </body>{" "}
     </html>
