@@ -93,6 +93,7 @@ export default function page() {
             {/* Animated images */}
             <div className="animation">
               <img src="/Images/Aboutus.svg" />
+              <img src="/Images/mob.svg" />
               {/* <Cards /> */}
             </div>
 

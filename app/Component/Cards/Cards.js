@@ -1,32 +1,23 @@
-// "use client";
-// import "./Cards.css";
-
-// export default function Home() {
-//   return (
-//     <>
-//       <div className="container">
-//         <div className="card">
-//           <img src="/Images/animationone.svg" width="446px" height="443px" />
-//         </div>
-//         <div className="card-one">
-//           {/* <img src="/Images/animationtwo.svg" width="446px" height="443px" /> */}
-//         </div>
-//         <div className="card-two">
-//           {/* <img src="/Images/animationthree.svg" width="446px" height="443px" /> */}
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-import React from "react";
+"use client";
 import "./Cards.css";
 
 export default function Home() {
   return (
-    <div class="card-container">
-      <div class="card first-card">Card 1</div>
-      <div class="card second-card">Card 2</div>
-      <div class="card third-card">Card 3</div>
-    </div>
+    <>
+      {/* <div className="container">
+        <div className="card">
+          <img src="/Images/animationone.svg" width="446px" height="443px" />
+        </div>
+        <div className="card-one">
+          <img src="/Images/animationtwo.svg" width="446px" height="443px" />
+        </div>
+        <div className="card-two">
+          <img src="/Images/animationthree.svg" width="446px" height="443px" />
+        </div>
+      </div> */}
+      <div class="card-container">
+        <div class="card"></div>
+      </div>
+    </>
   );
 }

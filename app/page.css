@@ -72,6 +72,9 @@
 }
 
 /* Second Component */
+.animation img:nth-child(2) {
+  display: none;
+}
 
 .page-top {
   display: grid;
@@ -360,6 +363,11 @@
   width: 360px;
   height: 400px;
 }
+.man-content {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
 
 /* Tab View  */
 
@@ -429,6 +437,12 @@
     width: 55px;
     height: 40px;
     border: 2px;
+  }
+  .animation img:nth-child(1) {
+    display: block;
+  }
+  .animation img:nth-child(2) {
+    display: none;
   }
 
   .page-top {
@@ -686,9 +700,8 @@
   }
   .left-line {
     border-bottom: 1px solid #00a9ff;
-
     border-top: 1px solid #00a9ff;
-    max-width: 100rem;
+    max-width: fit-content;
   }
   .left-grid {
     max-width: 100%;
@@ -765,6 +778,21 @@
     height: 40px;
     border: 2px;
   }
+
+  .animation {
+    display: grid;
+    justify-items: center;
+  }
+  .animation img:nth-child(1) {
+    display: none;
+  }
+  .animation img:nth-child(2) {
+    display: grid;
+    justify-items: center;
+    width: 500px;
+    height: 520px;
+  }
+
   .page-two-right-grid-para {
     display: grid;
     row-gap: 30px;
