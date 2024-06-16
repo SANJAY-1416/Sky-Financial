@@ -11,6 +11,7 @@ export default function page() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
 
   const sendMail = () => {
     axios
@@ -23,6 +24,7 @@ export default function page() {
       })
       .then(() => {
         console.log("success");
+        setShow(true);
       })
       .catch(() => {
         console.log("failure");
@@ -30,91 +32,100 @@ export default function page() {
   };
 
   return (
-    <div className="form">
-      <div className="sub-form">
-        <div className="overall-form">
-          <div className="input-gap">
-            <div className="input-form">
-              <div>
-                <img src="/Images/user.svg" />
-              </div>
-              <div className="line"></div>
-              <div className="inputGroup">
-                <input
-                  placeholder="name"
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="input"
-                />
-              </div>
-            </div>
-            <div className="input-form">
-              <div>
-                <img src="/Images/user.svg" />
-              </div>
-              <div className="line"></div>
-              <div className="inputGroup">
-                <input
-                  placeholder="Subject"
-                  type="text"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                  className="input"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="input-gap">
-            <div className="input-form">
-              <div>
-                <img src="/Images/user.svg" />
-              </div>
-              <div className="line"></div>
-              <div className="inputGroup">
-                <input
-                  placeholder="Enter your email"
-                  type="text"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="input"
-                />
-              </div>
-            </div>
-            <div className="input-form">
-              <div>
-                <img src="/Images/user.svg" />
-              </div>
-              <div className="line"></div>
-              <div className="inputGroup">
-                <input
-                  placeholder="Enter your phone number"
-                  type="text"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="input"
-                />
-              </div>
-            </div>
-          </div>
+    <>
+      {show ? (
+        <div onClose={() => setShow(false)}>
+          email has been sent successfully
         </div>
-        <div className="input-form-message">
-          <div className="inputGroup">
-            <textarea
-              placeholder="Message"
-              type="text"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="input"
-            />
+      ) : (
+        ""
+      )}
+      <div className="form">
+        <div className="sub-form">
+          <div className="overall-form">
+            <div className="input-gap">
+              <div className="input-form">
+                <div>
+                  <img src="/Images/user.svg" />
+                </div>
+                <div className="line"></div>
+                <div className="inputGroup">
+                  <input
+                    placeholder="name"
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="input"
+                  />
+                </div>
+              </div>
+              <div className="input-form">
+                <div>
+                  <img src="/Images/user.svg" />
+                </div>
+                <div className="line"></div>
+                <div className="inputGroup">
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    className="input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="input-gap">
+              <div className="input-form">
+                <div>
+                  <img src="/Images/user.svg" />
+                </div>
+                <div className="line"></div>
+                <div className="inputGroup">
+                  <input
+                    placeholder="Enter your email"
+                    type="text"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="input"
+                  />
+                </div>
+              </div>
+              <div className="input-form">
+                <div>
+                  <img src="/Images/user.svg" />
+                </div>
+                <div className="line"></div>
+                <div className="inputGroup">
+                  <input
+                    placeholder="Enter your phone number"
+                    type="text"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className="input"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="form-touch">
-          <button onClick={sendMail} type="submit" className="button">
-            Get in touch
-          </button>
+          <div className="input-form-message">
+            <div className="inputGroup">
+              <textarea
+                placeholder="Message"
+                type="text"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="input"
+              />
+            </div>
+          </div>
+          <div className="form-touch">
+            <button onClick={sendMail} type="submit" className="button">
+              Get in touch
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

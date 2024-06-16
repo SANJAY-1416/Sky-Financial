@@ -157,6 +157,7 @@ export default function page() {
                   solution for your needs.
                 </p>
               </div>
+
               <div className="flex-two">
                 <img src="/Images/handhold.svg" />
                 <p>LIFE INSURANCE</p>

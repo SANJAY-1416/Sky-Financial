@@ -15,10 +15,12 @@
 }
 .privacy-border p:nth-child(1) {
   color: #333333;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: var(--font-roboto);
 }
 .privacy-border p:nth-child(2) {
   color: #777777;
+  font-family: var(--font-work);
 }
 .overall-privacy-border {
   display: grid;
@@ -37,20 +39,23 @@
   color: #777777;
   size: 14px;
   font-weight: 500;
+  font-family: var(--font-work);
 }
 
 .privacy-headings p:nth-child(3) {
   color: #777777;
   size: 14px;
   font-weight: 500;
+  font-family: var(--font-work);
 }
 .privacy-headings p:nth-child(2) {
   font-size: 40px;
   font-weight: 700;
   line-height: 47.38px;
+  font-family: var(--font-roboto);
 }
 .dot {
-  color: #2d90c2;
+  color: #00a9ff;
 }
 @media (min-width: 650px) and (max-width: 1024px) {
   .parent-privacy {
@@ -119,7 +124,7 @@
     gap: 10px;
   }
   .privacy-headings p:nth-child(2) {
-    font-size: 25px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 47.38px;
   }
@@ -151,6 +156,7 @@
     size: 14px;
     font-weight: 500;
   }
+
   .privacy-headings h3 {
     font-size: 40px;
     font-weight: 700;

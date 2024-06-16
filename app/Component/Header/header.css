@@ -73,8 +73,8 @@
     display: none;
   }
   .header-image img {
-    /* width: 100px;
-    height: 20px; */
+    width: 140px;
+    height: 30px;
   }
   .header {
     display: grid;
@@ -84,15 +84,15 @@
     padding: 24px 0px 24px 0px;
   }
   .header-button button {
-    width: 200px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 15px;
     padding: 20px, 15px, 20px;
     gap: 10px;
     border: none;
     outline: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     background: #00a9ff;
   }
 }
