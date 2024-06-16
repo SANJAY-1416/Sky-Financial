@@ -36,7 +36,6 @@
   color: #333333;
   line-height: 74.94px;
   max-width: 41rem;
-  font-family: "san";
 }
 .dot {
   color: #00a9ff;
@@ -292,70 +291,6 @@
 .man {
   display: none;
 }
-/* .input-form {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: space-between;
-  border: 1px solid grey;
-  padding: 10px;
-  border-radius: 10px;
-  gap: 5px;
-  
-}
-.input-gap {
-  display: grid;
-  row-gap: 10px;
-}
-.form .input-form-message {
-  border: 1px solid grey;
-  padding: 10px;
-  border-radius: 10px;
-  width: 100%;
-}
-.input-form-message {
-  height: 80px;
-}
-
-.line {
-  height: 20px;
-  background-color: grey;
-  width: 1px;
-}
-input {
-  border: none;
-  background: none;
-  width: 100%;
-  outline: none;
-}
-
-.overall-form {
-  display: grid;
- 
-  grid-auto-flow: column;
-  justify-content: space-between;
-  column-gap: 20px;
-  row-gap: 25px;
-}
-.sub-form {
-  display: grid;
-  background: white;
-  border-radius: 10px;
-  padding: 40px;
-  row-gap: 25px;
-}
-.form-touch {
-  border: 1px solid #00a9ff;
-  color: #00a9ff;
-  padding: 10px;
-  display: grid;
-  align-items: center;
-}
-.form-touch button {
-  border: none;
-  outline: none;
-  background: none;
-  color: #00a9ff;
-} */
 
 .accordion-column {
   display: grid;
