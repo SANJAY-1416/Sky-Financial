@@ -70,6 +70,12 @@ textarea {
   height: 60px;
   width: 100%;
 }
+.email-successfully {
+  display: grid;
+  font-family: var(--font-work);
+  color: green;
+  justify-items: center;
+}
 /* Tab View  */
 
 @media (min-width: 650px) and (max-width: 1024px) {
@@ -92,25 +98,16 @@ textarea {
 /* Mobile View  */
 
 @media (min-width: 320px) and (max-width: 650px) {
-  /* .overall-form {
-    display: grid;
-
-    grid-auto-flow: row;
-
-    row-gap: 7px;
-  } */
   .overall-form {
     width: 100%;
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
   }
   .input-form {
     max-width: 100%;
     display: grid;
     /* grid-auto-flow: column; */
+    justify-content: flex-start;
     column-gap: 10px;
-  }
-  .from .overall-form {
-    width: 100%;
   }
 }

@@ -33,13 +33,6 @@ export default function page() {
 
   return (
     <>
-      {show ? (
-        <div onClose={() => setShow(false)}>
-          email has been sent successfully
-        </div>
-      ) : (
-        ""
-      )}
       <div className="form">
         <div className="sub-form">
           <div className="overall-form">
@@ -51,7 +44,7 @@ export default function page() {
                 <div className="line"></div>
                 <div className="inputGroup">
                   <input
-                    placeholder="name"
+                    placeholder="Name"
                     type="text"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -83,7 +76,7 @@ export default function page() {
                 <div className="line"></div>
                 <div className="inputGroup">
                   <input
-                    placeholder="Enter your email"
+                    placeholder="E-mail"
                     type="text"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -98,7 +91,7 @@ export default function page() {
                 <div className="line"></div>
                 <div className="inputGroup">
                   <input
-                    placeholder="Enter your phone number"
+                    placeholder="Phone"
                     type="text"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
@@ -119,6 +112,13 @@ export default function page() {
               />
             </div>
           </div>
+          {show ? (
+            <div className="email-successfully" onClose={() => setShow(false)}>
+              Email has been sent successfully
+            </div>
+          ) : (
+            ""
+          )}
           <div className="form-touch">
             <button onClick={sendMail} type="submit" className="button">
               Get in touch
