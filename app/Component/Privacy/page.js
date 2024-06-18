@@ -1,6 +1,7 @@
 import React from "react";
 import "./Privacy.css";
 import Header from "../Header/page";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -9,7 +10,12 @@ export default function page() {
       <div className="parent-privacy">
         <div className="privacy-headings">
           <p>
-            <span className="dot">Home</span> &gt; Privacy Policy
+            <span className="dot">
+              <Link href="/" className="dot">
+                Home
+              </Link>
+            </span>{" "}
+            &gt; Privacy Policy
           </p>
           <p>
             Privacy & Other policies<span className="dot">.</span>

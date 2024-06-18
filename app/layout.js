@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
       <body className={`${inter.variable} ${work.variable}`}>
         {children}
         <Footer />
-        {/* <Cards /> */}
       </body>{" "}
     </html>
   );

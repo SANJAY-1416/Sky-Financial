@@ -83,10 +83,7 @@
     display: grid;
     row-gap: 10px;
   }
-  .overall-terms-border {
-    display: grid;
-    row-gap: 16px;
-  }
+
   .privacy-headings {
     display: grid;
     row-gap: 15px;
@@ -98,7 +95,7 @@
     font-weight: 500;
   }
   .privacy-headings p:nth-child(2) {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 47.38px;
   }
@@ -116,7 +113,7 @@
 }
 @media (min-width: 320px) and (max-width: 650px) {
   .parent-privacy {
-    padding: 32px 40px;
+    padding: 32px 20px;
   }
   .privacy-grid {
     display: grid;
@@ -126,14 +123,19 @@
   .privacy-headings p:nth-child(2) {
     font-size: 32px;
     font-weight: 700;
-    line-height: 47.38px;
+    line-height: 33.38px;
+  }
+  .privacy-headings p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
   }
   .privacy-border {
     border: 1px solid #cbecfd;
-    padding: 8px;
+    padding: 20px;
     border-radius: 20px;
     display: grid;
-    row-gap: 6px;
+    row-gap: 15px;
   }
   .privacy-border p:nth-child(1) {
     color: #333333;
@@ -141,6 +143,7 @@
   }
   .privacy-border p:nth-child(2) {
     color: #777777;
+    font-size: 13px;
   }
   .overall-privacy-border {
     display: grid;
@@ -148,7 +151,7 @@
   }
   .privacy-headings {
     display: grid;
-    row-gap: 10px;
+    row-gap: 30px;
     padding: 20px 0;
   }
   .privacy-headings p:nth-child(1) {

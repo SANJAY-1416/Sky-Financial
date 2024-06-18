@@ -15,10 +15,12 @@
 }
 .terms-border p:nth-child(1) {
   color: #333333;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: var(--font-roboto);
 }
 .terms-border p:nth-child(2) {
   color: #777777;
+  font-family: var(--font-work);
 }
 .overall-terms-border {
   display: grid;
@@ -33,11 +35,25 @@
   color: #777777;
   size: 14px;
   font-weight: 500;
+  font-family: var(--font-work);
+}
+.term-headings p:nth-child(2) {
+  font-family: var(--font-roboto);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47.38px;
+}
+.term-headings p:nth-child(3) {
+  color: #777777;
+  size: 14px;
+  font-weight: 500;
+  font-family: var(--font-work);
 }
 .term-headings h3 {
   font-size: 40px;
   font-weight: 700;
   line-height: 47.38px;
+  font-family: var(--font-roboto);
 }
 .dot {
   color: #4eb7eb;
@@ -49,7 +65,7 @@
   .terms-grid {
     display: grid;
     grid-auto-flow: row;
-    gap: 20px;
+    gap: 30px;
   }
   .terms-border {
     border: 1px solid #cbecfd;
@@ -60,7 +76,6 @@
   }
   .terms-border p:nth-child(1) {
     color: #333333;
-    font-weight: 600;
   }
   .terms-border p:nth-child(2) {
     color: #777777;
@@ -79,6 +94,16 @@
     size: 14px;
     font-weight: 500;
   }
+  .term-headings p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 47.38px;
+  }
+  .term-headings p:nth-child(3) {
+    color: #777777;
+    size: 14px;
+    font-weight: 500;
+  }
   .term-headings h3 {
     font-size: 40px;
     font-weight: 700;
@@ -87,19 +112,29 @@
 }
 @media (min-width: 320px) and (max-width: 650px) {
   .parent-term {
-    padding: 32px 40px;
+    padding: 32px 20px;
   }
   .terms-grid {
     display: grid;
     grid-auto-flow: row;
     gap: 10px;
   }
+  .term-headings p:nth-child(2) {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 33.38px;
+  }
+  .terms-headings p:nth-child(3) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
   .terms-border {
     border: 1px solid #cbecfd;
     padding: 8px;
     border-radius: 20px;
     display: grid;
-    row-gap: 6px;
+    row-gap: 15px;
   }
   .terms-border p:nth-child(1) {
     color: #333333;
@@ -107,6 +142,7 @@
   }
   .terms-border p:nth-child(2) {
     color: #777777;
+    font-size: 13px;
   }
   .overall-terms-border {
     display: grid;
@@ -114,7 +150,7 @@
   }
   .term-headings {
     display: grid;
-    row-gap: 10px;
+    row-gap: 30px;
     padding: 20px 0;
   }
   .term-headings p:nth-child(1) {

@@ -13,22 +13,41 @@ export default function page() {
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
 
+  const validateForm = () => {
+    return (
+      name !== "" &&
+      subject !== "" &&
+      email !== "" &&
+      phone !== "" &&
+      message !== ""
+    );
+  };
+
   const sendMail = () => {
-    axios
-      .post("http://localhost:4001/", {
-        name,
-        subject,
-        email,
-        phone,
-        message,
-      })
-      .then(() => {
-        console.log("success");
-        setShow(true);
-      })
-      .catch(() => {
-        console.log("failure");
-      });
+    axios.post("http://localhost:4001/", {
+      name,
+      subject,
+      email,
+      phone,
+      message,
+    });
+    if (validateForm()) {
+      setShow(true);
+      setName("");
+      setSubject("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+    } else {
+      alert("Please fill out all fields before submitting.");
+    }
+    // .then(() => {
+    //   console.log("success");
+    //   setShow(true);
+    // })
+    // .catch(() => {
+    //   console.log("failure");
+    // });
   };
 
   return (
@@ -39,7 +58,7 @@ export default function page() {
             <div className="input-gap">
               <div className="input-form">
                 <div>
-                  <img src="/Images/user.svg" />
+                  <img src="/Images/user.svg" alt="userimage" />
                 </div>
                 <div className="line"></div>
                 <div className="inputGroup">
@@ -49,12 +68,13 @@ export default function page() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="input"
+                    required
                   />
                 </div>
               </div>
               <div className="input-form">
                 <div>
-                  <img src="/Images/user.svg" />
+                  <img src="/Images/user.svg" alt="userimage" />
                 </div>
                 <div className="line"></div>
                 <div className="inputGroup">
@@ -64,6 +84,7 @@ export default function page() {
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                     className="input"
+                    required
                   />
                 </div>
               </div>
@@ -71,7 +92,7 @@ export default function page() {
             <div className="input-gap">
               <div className="input-form">
                 <div>
-                  <img src="/Images/user.svg" />
+                  <img src="/Images/user.svg" alt="userimage" />
                 </div>
                 <div className="line"></div>
                 <div className="inputGroup">
@@ -81,12 +102,13 @@ export default function page() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="input"
+                    required
                   />
                 </div>
               </div>
               <div className="input-form">
                 <div>
-                  <img src="/Images/user.svg" />
+                  <img src="/Images/user.svg" alt="userimage" />
                 </div>
                 <div className="line"></div>
                 <div className="inputGroup">
@@ -96,6 +118,7 @@ export default function page() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     className="input"
+                    required
                   />
                 </div>
               </div>
@@ -109,6 +132,7 @@ export default function page() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="input"
+                required
               />
             </div>
           </div>

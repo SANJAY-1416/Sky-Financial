@@ -45,7 +45,12 @@ export default function page() {
               </div>
               <div className="left-grid-get">
                 <p>Get in touch</p>
-                <img src="/Images/arrows.svg" width="50px" height="50px" />
+                <img
+                  src="/Images/arrows.svg"
+                  width="50px"
+                  height="50px"
+                  alt="arrow"
+                />
               </div>
             </div>
           </div>
@@ -92,8 +97,8 @@ export default function page() {
           <div className="page-too-find">
             {/* Animated images */}
             <div className="animation">
-              <img src="/Images/Aboutus.svg" />
-              <img src="/Images/mob.svg" />
+              <img src="/Images/Aboutus.svg" alt="animateimage" />
+              <img src="/Images/mob.svg" alt="animateimage" />
               {/* <Cards /> */}
             </div>
 
@@ -133,6 +138,7 @@ export default function page() {
           </div>
           <div className="page-three">
             <div className="border"></div>
+
             <div className="flex">
               <div className="flex-one">
                 <img src="/Images/time.svg" />
@@ -158,27 +164,30 @@ export default function page() {
                   solution for your needs.
                 </p>
               </div>
-
-              <div className="flex-two">
-                <img src="/Images/handhold.svg" />
-                <p>LIFE INSURANCE</p>
-                <p>Protecting What Matters Most</p>
-                <p>
-                  Comprehensive Coverage for Peace of Mind: Our life insurance
-                  plans offer robust protection, ensuring you and your family
-                  can face life's uncertainties with confidence.
-                </p>
-                <p>
-                  Whether you're a young family just starting out or a retiree
-                  looking to leave a legacy, our experienced agents will work
-                  closely with you to understand your needs and goals, and
-                  recommend a policy that fits your budget and lifestyle.
-                </p>
-                <p>
-                  With Sky Financial, you can rest assured that your loved ones
-                  will be taken care of no matter what the future holds.
-                </p>
+              <div className="flextwoline">
+                <div className="blueline"></div>
+                <div className="flex-two">
+                  <img src="/Images/handhold.svg" />
+                  <p>LIFE INSURANCE</p>
+                  <p>Protecting What Matters Most</p>
+                  <p>
+                    Comprehensive Coverage for Peace of Mind: Our life insurance
+                    plans offer robust protection, ensuring you and your family
+                    can face life's uncertainties with confidence.
+                  </p>
+                  <p>
+                    Whether you're a young family just starting out or a retiree
+                    looking to leave a legacy, our experienced agents will work
+                    closely with you to understand your needs and goals, and
+                    recommend a policy that fits your budget and lifestyle.
+                  </p>
+                  <p>
+                    With Sky Financial, you can rest assured that your loved
+                    ones will be taken care of no matter what the future holds.
+                  </p>
+                </div>
               </div>
+              <div className="bluelinetwo"></div>
               <div className="flex-one">
                 <img src="/Images/profit.svg" />
                 <p>TAX BENEFIT PROGRAMS</p>
@@ -409,7 +418,7 @@ export default function page() {
               </div>
             </div>
             <div className="man-grid-image">
-              <img src="/Images/man.svg" />
+              <img src="/Images/man.svg" alt="manimage" />
             </div>
           </div>
         </div>

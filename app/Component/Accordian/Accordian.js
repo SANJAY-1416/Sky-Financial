@@ -16,9 +16,9 @@ const Accordion = ({ title, content }) => {
         <h2>{title}</h2>
         <span>
           {isOpen ? (
-            <img src="/Images/Vector.svg" />
+            <img src="/Images/Vectorone.svg" alt="vector" />
           ) : (
-            <img src="/Images/Vectorone.svg" />
+            <img src="/Images/Vector.svg" alt="vector" />
           )}
         </span>
       </div>

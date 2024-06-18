@@ -7,7 +7,7 @@ export default function page() {
     <div className="footer-parent">
       <div className="footer">
         <div>
-          <img src="/Images/logo.svg" />
+          <img src="/Images/logo.svg" alt="footerlogo" />
         </div>
         <div className="code"></div>
         <div className="footer-center">
@@ -25,15 +25,15 @@ export default function page() {
         <div className="code"></div>
         <div className="image-row ">
           <div className="image-number">
-            <img src="/Images/call.svg" />
+            <img src="/Images/call.svg" alt="contactnumber" />
             <p>586-907-8700</p>
           </div>
           <div className="image-number">
-            <img src="/Images/gmail.svg" />
+            <img src="/Images/gmail.svg" alt="conatactemail" />
             <p>sam@sky.financial</p>
           </div>
           <div className="image-number">
-            <img src="/Images/map-pin.svg" />
+            <img src="/Images/map-pin.svg" alt="contactaddress" />
             <p>455 E Maple Rd Troy, Michigan 48083, USA.</p>
           </div>
         </div>

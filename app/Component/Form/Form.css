@@ -2,11 +2,11 @@
   display: grid;
   font-family: var(--font-work);
   grid-auto-flow: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 1px solid grey;
   padding: 10px;
   border-radius: 10px;
-  gap: 5px;
+  gap: 10px;
 }
 .input-gap {
   display: grid;
@@ -37,7 +37,7 @@ input {
 .overall-form {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   column-gap: 20px;
   row-gap: 25px;
 }
@@ -45,7 +45,7 @@ input {
   display: grid;
   background: white;
   border-radius: 10px;
-  width: 610px;
+  width: 700px;
   padding: 40px;
   row-gap: 25px;
 }
