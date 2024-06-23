@@ -902,7 +902,12 @@
     line-height: 18px;
     font-family: var(--font-work);
   }
-
+  .flex-one:hover p {
+    color: white;
+  }
+  .flex-two:hover p {
+    color: white;
+  }
   .page-four {
     display: grid;
     grid-auto-flow: row;

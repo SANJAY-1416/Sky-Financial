@@ -1,23 +1,55 @@
 "use client";
 import "./Cards.css";
 
-export default function Home() {
+import { useState, useEffect } from "react";
+
+export default function Page() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [
+    { src: "/1.svg", alt: "Group 45" },
+    { src: "/Group.svg", alt: "Group 46" },
+    { src: "/groupone.svg", alt: "Group 47" },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 2928);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <>
-      {/* <div className="container">
-        <div className="card">
-          <img src="/Images/animationone.svg" width="446px" height="443px" />
-        </div>
-        <div className="card-one">
-          <img src="/Images/animationtwo.svg" width="446px" height="443px" />
-        </div>
-        <div className="card-two">
-          <img src="/Images/animationthree.svg" width="446px" height="443px" />
-        </div>
-      </div> */}
-      <div class="card-container">
-        <div class="card"></div>
+    <div className="container">
+      <div
+        className={`image-container card ${
+          currentImage === 0 ? "big" : "small"
+        }`}
+      >
+        <img src={images[currentImage].src} alt={images[currentImage].alt} />
       </div>
-    </>
+
+      <div
+        className={`image-container card-two ${
+          currentImage === 1 ? "big" : "small"
+        }`}
+      >
+        <img
+          src={images[(currentImage + 1) % images.length].src}
+          alt={images[(currentImage + 1) % images.length].alt}
+        />
+      </div>
+
+      <div
+        className={`image-container card-three ${
+          currentImage === 2 ? "big" : "small"
+        }`}
+      >
+        <img
+          src={images[(currentImage + 2) % images.length].src}
+          alt={images[(currentImage + 2) % images.length].alt}
+        />
+      </div>
+    </div>
   );
 }
